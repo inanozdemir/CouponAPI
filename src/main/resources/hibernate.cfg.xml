@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://127.0.0.1:6633/bitpazari</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+
+      <mapping class="com.bilyoner.coupon.entities.Event"/>
+      <mapping class="com.bilyoner.coupon.pojo.AdPictures"/>
+      <mapping class="com.bilyoner.coupon.pojo.AdProperties"/>
+      <mapping class="com.bilyoner.coupon.pojo.Ads"/>
+      <mapping class="com.bilyoner.coupon.pojo.Categories"/>
+      <mapping class="com.bilyoner.coupon.pojo.Messages"/>
+      <mapping class="com.bilyoner.coupon.pojo.NotificationType"/>
+      <mapping class="com.bilyoner.coupon.pojo.Properties"/>
+      <mapping class="com.bilyoner.coupon.pojo.UserFavAds"/>
+      <mapping class="com.bilyoner.coupon.pojo.UserFavCategories"/>
+      <mapping class="com.bilyoner.coupon.pojo.UserNotification"/>
+      <mapping class="com.bilyoner.coupon.pojo.UserTypes"/>
+      <mapping class="com.bilyoner.coupon.pojo.Users"/>
+      <mapping class="com.bilyoner.coupon.pojo.ConfirmationToken"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
